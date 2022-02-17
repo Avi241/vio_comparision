@@ -8,7 +8,7 @@ We can evaluate the algorithms with (ETH MAV Visual Inertial Datasets with Motio
 
 Every container contains a trajectory recording python script for recording the trajectory in text file which can be further used to calculate RMSE(Root mean square error) of different algorithms with respect to ground truth.(Steps will be given in each readme file)
 
-Docker image of these algorithms is available:( please find the .md files above in code section for installation)
+Docker image of these algorithms is available:( please find the .md files above in code section for docker setup)
 1) [VINS-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono)
 2) [VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion)
 3) [OKVIS-core](https://github.com/ethz-asl/okvis)
