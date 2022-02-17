@@ -6,7 +6,7 @@ Docker images is created to make the process of comaprision easy,fast and also t
 
 We can evaluate the algorithms with (ETH MAV Visual Inertial Datasets with Motion and Structure Ground-Truth)[here](https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets) as well as with our own dataset or realtime data.
 
-Every container contains a trajectory recodring python script for recording the trajaectory in text file which can be further used to calculate RMSE(Root mean square error) of different algorithms with respect to ground truth.(Steps will be given in each readme file)
+Every container contains a trajectory recodring python script for recording the trajectory in text file which can be further used to calculate RMSE(Root mean square error) of different algorithms with respect to ground truth.(Steps will be given in each readme file)
 
 Docker image of available Algorithms:
 1) [VINS-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono)
