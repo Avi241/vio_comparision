@@ -1,5 +1,5 @@
 # VINS-FUSION
-This image contains the core implementation of vins-fusion VIO algorithm without ros.
+This image contains the core implementation of vins-fusion VIO algorithm
 # Steps for installation
 (Please go to Docker-installation.md for installation of docker)
 ## Setting up the workspace on users computer
