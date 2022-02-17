@@ -1,5 +1,5 @@
 # SVO
-This image contains the core implementation of svo VIO algorithm without ros.
+This image contains the core implementation of svo VIO algorithm 
 # Steps for installation
 (Please go to Docker-installation.md for installation of docker)
 ## Setting up the workspace on users computer
