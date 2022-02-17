@@ -7,11 +7,12 @@ This image contains the core implementation of OKVIS VIO algorithm without ros.
     mkdir -p okvis/home
    ### enable access to xhost from the container
     xhost +
-   ### Run docker and open bash shell
-    docker run -it --privileged --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" -v ~/okvis/home:/home/:rw --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -p 14556:14556/udp --name=drone avi241/okvis bash
-   ## This will download,build and open an docker container for okvis algorithm 
-   ### Downloading MAV dataset
-    wget http://robotics.ethz.ch/~asl-datasets/ijrr_euroc_mav_dataset/machine_hall/MH_01_easy/MH_01_easy.bag
+   ### Run docker and open bash shell(This will download,build and open an docker container for okvis algorithm )
+    docker run -it --privileged --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" -v ~/okvis/home:/home/:rw --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -p 14556:14556/udp --name=okvis avi241/okvis bash
+    
+   ### Downloading MAV ASL dataset ( inside the new bash terminal)
+    wget http://robotics.ethz.ch/~asl-datasets/ijrr_euroc_mav_dataset/machine_hall/MH_01_easy/MH_01_easy.zip
+    unzip MH_01_easy.zip
    ### open a new bash shell of this container
     docker exec -it okvis bash
     
@@ -23,16 +24,16 @@ This image contains the core implementation of OKVIS VIO algorithm without ros.
    
    ## Some basic docker commands
    ### start docker container
-    docker start drone
+    docker start okvis
    ### stop the container
-    docker stop drone
+    docker stop okvis
    ### remove the container
-    docker rm drone
+    docker rm okvis
    ### list container
     docker container ls -a # -a is for all whether container is running or not
    ### list docker images
     docker image ls -a
    ### remove image
-    docker image rm avi241/drone-pc
+    docker image rm avi241/okvis
    ### open a new bash shell of this container
-    docker exec -it drone bash
+    docker exec -it okvis bash
